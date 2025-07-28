@@ -1,26 +1,33 @@
 const express = require("express");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
-require("dotenv").config();
+require("dotenv").config({ path: "../.env" });
+
+console.log("EMAIL_USER:", process.env.EMAIL_USER);
+console.log("EMAIL_PASS:", process.env.EMAIL_PASS ? "Exists" : "Missing");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
+// Allow all origins for debugging (change to your domain for production)
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "*",
     methods: ["POST", "OPTIONS"],
     allowedHeaders: ["Content-Type"],
   })
 );
-app.use(express.json());
+
+// Handle preflight for all routes
+app.options("/", cors());
 app.options("/contact", cors());
+
+app.use(express.json());
 
 app.use((req, res, next) => {
   console.log(`➡️ ${req.method} ${req.url}`);
   next();
 });
-
 
 app.post("/contact", async (req, res) => {
   const { name, email, message } = req.body;
@@ -44,10 +51,10 @@ app.post("/contact", async (req, res) => {
   }
 
   const mailOptions = {
-    from: email,
+    from: process.env.EMAIL_USER, // must match authenticated user for Gmail
     to: process.env.EMAIL_USER,
     subject: `New message from ${name}`,
-    text: message,
+    text: `Message: ${message}\n\nSender Email: ${email}`,
   };
 
   try {
@@ -63,3 +70,4 @@ app.post("/contact", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
 });
+
