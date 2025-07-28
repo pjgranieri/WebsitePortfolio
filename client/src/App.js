@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Home from "./Pages/Home";
+import Experience from "./Pages/Experience";
+import Projects from "./Pages/Projects";
+import About from "./Pages/About";
 
 function App() {
   const [formData, setFormData] = useState({
