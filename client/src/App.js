@@ -14,7 +14,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://portfolio-backend-pjgranieri.onrender.com/contact", formData);
+      await axios.post("http://localhost:5001/contact", formData);
       alert("Message sent!");
     } catch (err) {
       console.error(err);
