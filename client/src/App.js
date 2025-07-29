@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home";
 import Experience from "./Pages/Experience";
 import Projects from "./Pages/Projects";
@@ -29,38 +29,21 @@ function App() {
 
   return (
     <Router>
-      <div style={{ padding: "2rem", fontFamily: "sans-serif" }}>
-        <h1>PJ Granieri – Portfolio</h1>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <br />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <br />
-          <textarea
-            name="message"
-            placeholder="Your message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
-          <br />
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
+      {/* Navigation Bar */}
+      <nav
+        style={{
+          display: "flex",
+          gap: 24,
+          padding: "1rem",
+          borderBottom: "1px solid #eee",
+          marginBottom: 24,
+        }}
+      >
+        <Link to="/">Home</Link>
+        <Link to="/experience">Experience</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/about">About Me</Link>
+      </nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/experience" element={<Experience />} />
