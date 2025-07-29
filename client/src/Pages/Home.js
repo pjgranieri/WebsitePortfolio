@@ -44,8 +44,8 @@ export default function Home() {
         </div>
         <div style={{ display: "flex", justifyContent: "center", gap: 16, flexWrap: "wrap", marginBottom: 24 }}>
           <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="cta-btn">📄 Resume</a>
-          <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer" className="cta-btn">💼 LinkedIn</a>
-          <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer" className="cta-btn">📂 GitHub</a>
+          <a href="https://www.linkedin.com/in/pasqualegranieri" target="_blank" rel="noopener noreferrer" className="cta-btn">💼 LinkedIn</a>
+          <a href="https://github.com/pjgranieri" target="_blank" rel="noopener noreferrer" className="cta-btn">📂 GitHub</a>
           <a href="#contact" className="cta-btn">📬 Contact</a>
         </div>
       </header>
