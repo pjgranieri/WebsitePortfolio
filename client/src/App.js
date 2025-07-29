@@ -5,6 +5,9 @@ import Home from "./Pages/Home";
 import Experience from "./Pages/Experience";
 import Projects from "./Pages/Projects";
 import About from "./Pages/About";
+import TrainControl from "./Pages/TrainControl";
+import BacktestingEngine from "./Pages/BacktestingEngine";
+import SpaceInvadersBopit from "./Pages/SpaceInvadersBopit";
 
 function App() {
   const [formData, setFormData] = useState({
@@ -49,6 +52,9 @@ function App() {
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
+        <Route path="/projects/train-control" element={<TrainControl />} />
+        <Route path="/projects/backtesting-engine" element={<BacktestingEngine />} />
+        <Route path="/projects/space-invaders-bopit" element={<SpaceInvadersBopit />} />
       </Routes>
     </Router>
   );
