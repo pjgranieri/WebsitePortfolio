@@ -163,7 +163,7 @@ export default function Home() {
         PJ Granieri © 2025 &nbsp;|&nbsp;
         <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp;|&nbsp;
         <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp;|&nbsp;
-        <a href="https://leetcode.com/your-leetcode" target="_blank" rel="noopener noreferrer">LeetCode</a> &nbsp;|&nbsp;
+        <a href="https://leetcode.com/u/pj_gran" target="_blank" rel="noopener noreferrer">LeetCode</a> &nbsp;|&nbsp;
         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
       </footer>
     </div>
