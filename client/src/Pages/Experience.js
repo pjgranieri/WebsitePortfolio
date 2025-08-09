@@ -3,7 +3,7 @@ import React from "react";
 export default function Experience() {
   return (
     <div style={{ maxWidth: 800, margin: "0 auto", fontFamily: "sans-serif", padding: 24 }}>
-      <h1 style={{ fontSize: "2rem", marginBottom: 32 }}>💼 PJ Granieri — Experience</h1>
+      <h1 style={{ fontSize: "2rem", marginBottom: 32 }}>Experience</h1>
 
       {/* Software Engineer Intern */}
       <section style={{ marginBottom: 40 }}>

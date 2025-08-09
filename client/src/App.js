@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -8,6 +8,7 @@ import About from "./Pages/About";
 import TrainControl from "./Pages/TrainControl";
 import BacktestingEngine from "./Pages/BacktestingEngine";
 import SpaceInvadersBopit from "./Pages/SpaceInvadersBopit";
+import "./App.css";
 
 function App() {
   const [formData, setFormData] = useState({
@@ -15,6 +16,14 @@ function App() {
     email: "",
     message: "",
   });
+
+  const [cursor, setCursor] = useState({ x: -100, y: -100 });
+
+  useEffect(() => {
+    const move = (e) => setCursor({ x: e.clientX, y: e.clientY });
+    window.addEventListener("mousemove", move);
+    return () => window.removeEventListener("mousemove", move);
+  }, []);
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -47,6 +56,13 @@ function App() {
         <Link to="/projects">Projects</Link>
         <Link to="/about">About Me</Link>
       </nav>
+      <div
+        className="cursor-gradient"
+        style={{
+          left: cursor.x - 200,
+          top: cursor.y - 200,
+        }}
+      />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/experience" element={<Experience />} />
