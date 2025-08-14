@@ -40,32 +40,32 @@ export default function Home() {
           Engineer | Builder | AI Problem Solver
         </h2>
         <div style={{ fontSize: "1.1rem", color: "#333", marginBottom: 24 }}>
-          Software Engineer Intern @ Sogeti &bull; Computer Engineering @ Pitt &bull; AI, Systems, and Finance Enthusiast
+          Software Engineer Intern @ Sogeti &bull; Computer Engineering @ Pitt &bull; AI Enthusiast
         </div>
         <div style={{ display: "flex", justifyContent: "center", gap: 16, flexWrap: "wrap", marginBottom: 24 }}>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="cta-btn">📄 Resume</a>
-          <a href="https://www.linkedin.com/in/pasqualegranieri" target="_blank" rel="noopener noreferrer" className="cta-btn">💼 LinkedIn</a>
-          <a href="https://github.com/pjgranieri" target="_blank" rel="noopener noreferrer" className="cta-btn">📂 GitHub</a>
-          <a href="#contact" className="cta-btn">📬 Contact</a>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="cta-btn">Resume</a>
+          <a href="https://www.linkedin.com/in/pasqualegranieri" target="_blank" rel="noopener noreferrer" className="cta-btn">LinkedIn</a>
+          <a href="https://github.com/pjgranieri" target="_blank" rel="noopener noreferrer" className="cta-btn">GitHub</a>
+          <a href="#contact" className="cta-btn">Contact</a>
         </div>
       </header>
 
       {/* About Me */}
       <section style={{ marginBottom: 40 }}>
-        <h3>👋 About Me</h3>
+        <h3>About Me</h3>
         <p>
           I’m PJ Granieri, a Computer Engineering student at the University of Pittsburgh passionate about building intelligent, scalable systems.<br /><br />
           I’ve interned at Sogeti, where I helped develop an agentic AI system integrating PostgreSQL, Neo4j, and GPT-4 to automate internal QA workflows. I also TA for ECE 1140, and I’ve built projects spanning AI backtesting engines, train control simulations, and embedded systems with custom PCBs.<br /><br />
-          Whether it's software engineering, automation, or AI — I love turning complex challenges into working systems that scale.
+          Whether it's software engineering, automation, or AI, I love turning complex challenges into working systems that scale.
         </p>
       </section>
 
       {/* Featured Projects */}
       <section style={{ marginBottom: 40 }}>
-        <h3>🛠️ Featured Projects</h3>
+        <h3>Featured Projects</h3>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 20 }}>
           <div style={{ border: "1px solid #eee", borderRadius: 8, padding: 16 }}>
-            <h4>🔁 Backtesting Engine for Algorithmic Trading</h4>
+            <h4>Backtesting Engine for Algorithmic Trading</h4>
             <ul>
               <li>Built a modular Python system to simulate technical strategies</li>
               <li>Logged metrics like Sharpe, Drawdown, and Win Rate</li>
@@ -73,7 +73,7 @@ export default function Home() {
             </ul>
           </div>
           <div style={{ border: "1px solid #eee", borderRadius: 8, padding: 16 }}>
-            <h4>🚆 Train Control Simulation System</h4>
+            <h4>Train Control Simulation System</h4>
             <ul>
               <li>Engineered real-time simulation of trains, wayside, and CTC</li>
               <li>Backend + PyQt frontend with maps, switch logic, and signals</li>
@@ -81,7 +81,7 @@ export default function Home() {
             </ul>
           </div>
           <div style={{ border: "1px solid #eee", borderRadius: 8, padding: 16 }}>
-            <h4>🕹️ Space Invaders “Bop-It!” Game</h4>
+            <h4>Space Invaders “Bop-It!” Game</h4>
             <ul>
               <li>Embedded system with C++ + ATMega328P + KiCad PCB</li>
               <li>Real-time reaction game with sound, lights, and scoring</li>
@@ -96,7 +96,7 @@ export default function Home() {
 
       {/* Experience Snapshot */}
       <section style={{ marginBottom: 40 }}>
-        <h3>💼 Experience Snapshot</h3>
+        <h3>Experience Snapshot</h3>
         <div style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
           <div style={{ flex: 1, minWidth: 250 }}>
             <strong>Software Engineer Intern @ Sogeti</strong><br />
@@ -121,10 +121,10 @@ export default function Home() {
 
       {/* Contact Me */}
       <section id="contact" style={{ marginBottom: 40 }}>
-        <h3>📬 Contact Me</h3>
+        <h3>Contact Me</h3>
         <p>
           Have a question, opportunity, or just want to say hi?<br />
-          Feel free to reach out — I’d love to connect.
+          Feel free to reach out, I’d love to connect.
         </p>
         <form onSubmit={handleSubmit} style={{ maxWidth: 400 }}>
           <input
