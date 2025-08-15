@@ -1,26 +1,5 @@
 import React from "react";
 
-const projects = [
-  {
-    title: "Backtesting Engine",
-    description:
-      "A robust backtesting engine for algorithmic trading strategies, featuring historical data analysis and performance metrics.",
-    link: "#",
-  },
-  {
-    title: "Space Invaders Bopit",
-    description:
-      "A modern twist on the classic Space Invaders game, integrating unique controls and interactive gameplay.",
-    link: "#",
-  },
-  {
-    title: "Train Control",
-    description:
-      "A simulation tool for managing and optimizing train schedules and operations.",
-    link: "#",
-  },
-];
-
 export default function Projects() {
   return (
     <div

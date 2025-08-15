@@ -25,19 +25,9 @@ function App() {
     return () => window.removeEventListener("mousemove", move);
   }, []);
 
-  const handleChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleChange = () => {};
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      await axios.post("http://localhost:5001/contact", formData);
-      alert("Message sent!");
-    } catch (err) {
-      console.error(err);
-      alert("Failed to send message.");
-    }
-  };
+  const handleSubmit = () => {};
 
   return (
     <Router>
