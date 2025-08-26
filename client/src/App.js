@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home";
 import Experience from "./Pages/Experience";
@@ -11,12 +10,6 @@ import SpaceInvadersBopit from "./Pages/SpaceInvadersBopit";
 import "./App.css";
 
 function App() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
   const [cursor, setCursor] = useState({ x: -100, y: -100 });
 
   useEffect(() => {
@@ -24,10 +17,6 @@ function App() {
     window.addEventListener("mousemove", move);
     return () => window.removeEventListener("mousemove", move);
   }, []);
-
-  const handleChange = () => {};
-
-  const handleSubmit = () => {};
 
   return (
     <Router>
