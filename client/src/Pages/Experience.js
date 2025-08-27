@@ -5,6 +5,32 @@ export default function Experience() {
     <div style={{ maxWidth: 800, margin: "0 auto", fontFamily: "sans-serif", padding: 24 }}>
       <h1 style={{ fontSize: "2rem", marginBottom: 32 }}>Experience</h1>
 
+      {/* Teaching Assistant */}
+      <section style={{ marginBottom: 40 }}>
+        <h2 style={{ fontSize: "1.15rem", margin: 0, fontWeight: 600 }}>Teaching Assistant for ECE 1140: Systems and Project Engineering</h2>
+        <div style={{ color: "#555", marginBottom: 2 }}>
+          University of Pittsburgh — Pittsburgh, PA · On-site
+        </div>
+        <div style={{ color: "#888", marginBottom: 12 }}>
+          August 2025 – Present
+        </div>
+        <p>
+          As a TA for ECE 1140, I mentor students through hands-on systems engineering projects. The course mirrors industry workflows, and I guide students through the entire development lifecycle: from requirement specs and software architecture to sprint planning, integration, and testing.
+        </p>
+        <p>
+          I offer one-on-one mentorship, help debug and review technical implementations, and provide feedback on documentation and teamwork. My work emphasizes real-world readiness, agile practices, and collaborative development.
+        </p>
+        <div style={{ marginTop: 8, marginBottom: 4, fontWeight: 500 }}>Key Contributions:</div>
+        <ul style={{ marginTop: 0, marginBottom: 8 }}>
+          <li>Mentored student teams on system design, software architecture, and sprint execution</li>
+          <li>Facilitated debugging sessions, code reviews, and requirement evaluations</li>
+          <li>Promoted agile principles using GitHub and Jira for collaborative project tracking</li>
+        </ul>
+        <div style={{ fontSize: "0.98rem", color: "#444" }}>
+          <strong>Skills Reinforced:</strong> Technical mentoring · Agile development · Software lifecycle · Team collaboration
+        </div>
+      </section>
+
       {/* Software Engineer Intern */}
       <section style={{ marginBottom: 40 }}>
         <h2 style={{ fontSize: "1.15rem", margin: 0, fontWeight: 600 }}>Software Engineer Intern</h2>
@@ -28,32 +54,6 @@ export default function Experience() {
         </ul>
         <div style={{ fontSize: "0.98rem", color: "#444" }}>
           <strong>Technologies:</strong> PostgreSQL · pgvector · Neo4j · GPT-4 · Docker · LangMem · Agno · REST APIs
-        </div>
-      </section>
-
-      {/* Teaching Assistant */}
-      <section style={{ marginBottom: 40 }}>
-        <h2 style={{ fontSize: "1.15rem", margin: 0, fontWeight: 600 }}>Teaching Assistant — ECE 1140: Systems and Project Engineering</h2>
-        <div style={{ color: "#555", marginBottom: 2 }}>
-          University of Pittsburgh — Pittsburgh, PA · On-site
-        </div>
-        <div style={{ color: "#888", marginBottom: 12 }}>
-          August 2025 – Present
-        </div>
-        <p>
-          As a TA for ECE 1140, I mentor students through hands-on systems engineering projects. The course mirrors industry workflows, and I guide students through the entire development lifecycle: from requirement specs and software architecture to sprint planning, integration, and testing.
-        </p>
-        <p>
-          I offer one-on-one mentorship, help debug and review technical implementations, and provide feedback on documentation and teamwork. My work emphasizes real-world readiness, agile practices, and collaborative development.
-        </p>
-        <div style={{ marginTop: 8, marginBottom: 4, fontWeight: 500 }}>Key Contributions:</div>
-        <ul style={{ marginTop: 0, marginBottom: 8 }}>
-          <li>Mentored student teams on system design, software architecture, and sprint execution</li>
-          <li>Facilitated debugging sessions, code reviews, and requirement evaluations</li>
-          <li>Promoted agile principles using GitHub and Jira for collaborative project tracking</li>
-        </ul>
-        <div style={{ fontSize: "0.98rem", color: "#444" }}>
-          <strong>Skills Reinforced:</strong> Technical mentoring · Agile development · Software lifecycle · Team collaboration
         </div>
       </section>
 

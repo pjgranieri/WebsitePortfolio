@@ -36,10 +36,10 @@ export default function Home() {
       {/* Headline */}
       <header style={{ textAlign: "center", marginBottom: 32 }}>
         <h1 style={{ fontSize: "2.5rem", margin: 0 }}>PJ Granieri</h1>
-        <h2 style={{ fontWeight: 400, color: "#555", margin: "0.5rem 0 1.5rem" }}>
+        <h2 style={{ fontWeight: 400, color: "#acacacff", margin: "0.5rem 0 1.5rem" }}>
           Engineer | Builder | AI Problem Solver
         </h2>
-        <div style={{ fontSize: "1.1rem", color: "#333", marginBottom: 24 }}>
+        <div style={{ fontSize: "1.1rem", color: "#acacacff", marginBottom: 24 }}>
           Software Engineer Intern @ Sogeti &bull; Computer Engineering @ Pitt &bull; AI Enthusiast
         </div>
         <div style={{ display: "flex", justifyContent: "center", gap: 16, flexWrap: "wrap", marginBottom: 24 }}>
@@ -160,10 +160,9 @@ export default function Home() {
       {/* Footer */}
       <footer style={{ borderTop: "1px solid #ccc", paddingTop: 16, textAlign: "center", color: "#888" }}>
         PJ Granieri © 2025 &nbsp;|&nbsp;
-        <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp;|&nbsp;
-        <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp;|&nbsp;
+        <a href="https://www.linkedin.com/in/pasqualegranieri" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp;|&nbsp;
+        <a href="https://github.com/pjgranieri" target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp;|&nbsp;
         <a href="https://leetcode.com/u/pj_gran" target="_blank" rel="noopener noreferrer">LeetCode</a> &nbsp;|&nbsp;
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
       </footer>
     </div>
   );

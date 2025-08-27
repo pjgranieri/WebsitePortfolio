@@ -11,7 +11,7 @@ export default function About() {
         I recently interned at Sogeti, where I worked on developing agentic AI systems that integrate OpenAI's GPT-4, Neo4j, and pgvector to automate internal QA workflows. I’ve also served as a Teaching Assistant for ECE 1140, helping students navigate the software development lifecycle through agile planning, architecture reviews, and debugging support.
       </p>
       <p>
-        Beyond the classroom and internship settings, I’ve led multi-person teams, architected simulation environments, designed PCBs, and launched a profitable resale business. Every project has been an opportunity to push my technical skills, lead with ownership, and build something that works — and scales.
+        Beyond the classroom and internship settings, I’ve led multi-person teams, architected simulation environments, designed PCBs, and launched a profitable resale business. Every project has been an opportunity to push my technical skills, lead with ownership, and build something that works and scales.
       </p>
 
       <h2 style={{ fontSize: "1.15rem", margin: "32px 0 8px" }}>What I Bring</h2>
@@ -24,7 +24,7 @@ export default function About() {
 
       <h2 style={{ fontSize: "1.15rem", margin: "32px 0 8px" }}>What I’m Aiming For</h2>
       <p>
-        I’m actively looking for opportunities in AI engineering, software development, and technical product roles where I can contribute to scalable systems, grow under mentorship, and help shape the next wave of intelligent tools. Long term, I’m interested in building or joining a startup, leading engineering teams, and pushing the boundaries of human-computer collaboration.
+        I’m actively looking for opportunities in AI engineering, software development, and technical product roles where I can contribute to scalable systems, grow under mentorship, and help shape the next wave of intelligent tools. Long term, I’m interested in leading engineering teams, and pushing the boundaries of human-computer collaboration.
       </p>
 
       <h2 style={{ fontSize: "1.15rem", margin: "32px 0 8px" }}>Let’s Connect</h2>

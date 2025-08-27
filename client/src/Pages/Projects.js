@@ -13,17 +13,11 @@ export default function Projects() {
       <h1 style={{ fontSize: "2rem", marginBottom: 32 }}>Projects</h1>
 
       {/* Completed Projects */}
-      <h2 style={{ fontSize: "1.2rem", margin: "32px 0 16px" }}> Completed</h2>
+      <h2 style={{ fontSize: "1.2rem", margin: "32px 0 16px" }}>Completed</h2>
 
       {/* Train Control Simulation System */}
       <section style={{ marginBottom: 40 }}>
-        <h3
-          style={{
-            fontSize: "1.08rem",
-            margin: 0,
-            fontWeight: 600,
-          }}
-        >
+        <h3 style={{ fontSize: "1.08rem", margin: 0, fontWeight: 600 }}>
           Train Control Simulation System
         </h3>
         <p style={{ margin: "8px 0 16px" }}>
@@ -44,13 +38,7 @@ export default function Projects() {
 
       {/* Backtesting Engine for Algorithmic Trading */}
       <section style={{ marginBottom: 40 }}>
-        <h3
-          style={{
-            fontSize: "1.08rem",
-            margin: 0,
-            fontWeight: 600,
-          }}
-        >
+        <h3 style={{ fontSize: "1.08rem", margin: 0, fontWeight: 600 }}>
           Backtesting Engine for Algorithmic Trading
         </h3>
         <p style={{ margin: "8px 0 16px" }}>
@@ -71,14 +59,8 @@ export default function Projects() {
 
       {/* Space Invaders “Bop-It!” Game */}
       <section style={{ marginBottom: 40 }}>
-        <h3
-          style={{
-            fontSize: "1.08rem",
-            margin: 0,
-            fontWeight: 600,
-          }}
-        >
-           Space Invaders “Bop-It!” Game
+        <h3 style={{ fontSize: "1.08rem", margin: 0, fontWeight: 600 }}>
+          Space Invaders “Bop-It!” Game
         </h3>
         <p style={{ margin: "8px 0 16px" }}>
           An embedded reaction game built on an ATMega328P with a custom PCB,
@@ -96,19 +78,13 @@ export default function Projects() {
         </a>
       </section>
 
-      {/* In Progress Projects */}
-      <h2 style={{ fontSize: "1.2rem", margin: "32px 0 16px" }}>In Progress</h2>
+      {/* MVP/Prototype Projects */}
+      <h2 style={{ fontSize: "1.2rem", margin: "32px 0 16px" }}>MVP / Prototype</h2>
 
       {/* Portfolio Website */}
       <section style={{ marginBottom: 40 }}>
-        <h3
-          style={{
-            fontSize: "1.08rem",
-            margin: 0,
-            fontWeight: 600,
-          }}
-        >
-          Portfolio Website (In Progress)
+        <h3 style={{ fontSize: "1.08rem", margin: 0, fontWeight: 600 }}>
+          Portfolio Website
         </h3>
         <p style={{ margin: "8px 0 16px" }}>
           A personal portfolio site built with React and a simple backend to showcase
@@ -116,22 +92,12 @@ export default function Projects() {
           contact form, project breakdowns, and responsive design optimized for
           desktop and mobile.
         </p>
-        {/* Uncomment below if you want to link to the portfolio project page */}
-        {/* <Link to="/projects/portfolio-website" style={{ textDecoration: "underline", color: "#007bff" }}>
-          [View Project →]
-        </Link> */}
       </section>
 
       {/* AI Email & Calendar Assistant */}
       <section style={{ marginBottom: 40 }}>
-        <h3
-          style={{
-            fontSize: "1.08rem",
-            margin: 0,
-            fontWeight: 600,
-          }}
-        >
-          AI Email & Calendar Assistant (In Progress)
+        <h3 style={{ fontSize: "1.08rem", margin: 0, fontWeight: 600 }}>
+          AI Email & Calendar Assistant
         </h3>
         <p style={{ margin: "8px 0 16px" }}>
           A personal AI assistant designed to read, summarize, and prioritize emails,
@@ -140,9 +106,52 @@ export default function Projects() {
           understanding, multi-account support, and cross-platform syncing (Google,
           Apple, Outlook).
         </p>
-        {/* <Link to="/projects/ai-email-calendar-assistant" style={{ textDecoration: "underline", color: "#007bff" }}>
-          [View Project →]
-        </Link> */}
+      </section>
+
+      {/* In Progress Projects */}
+      <h2 style={{ fontSize: "1.2rem", margin: "32px 0 16px" }}>In Progress</h2>
+
+      {/* Real-Time Autonomous Poker Player Using Computer Vision and AI */}
+      <section style={{ marginBottom: 40 }}>
+        <h3 style={{ fontSize: "1.08rem", margin: 0, fontWeight: 600 }}>
+          Real-Time Autonomous Poker Player Using Computer Vision and AI
+        </h3>
+        <p style={{ margin: "8px 0 16px" }}>
+          An embedded hardware system that autonomously plays live poker by
+          capturing cards with computer vision and analyzing the game state with
+          an AI decision engine. Integrates hardware, firmware, image processing,
+          and lightweight ML models to make real-time betting decisions with
+          action and sizing recommendations.
+        </p>
+      </section>
+
+      {/* HotCiv: Turn-Based Strategy Game */}
+      <section style={{ marginBottom: 40 }}>
+        <h3 style={{ fontSize: "1.08rem", margin: 0, fontWeight: 600 }}>
+          HotCiv: Turn-Based Strategy Game
+        </h3>
+        <p style={{ margin: "8px 0 16px" }}>
+          A Java-based, 2–4 player turn-based strategy game developed iteratively
+          as part of ECE 1145. Players control cities and units on a 16x16 tile map,
+          gather resources, produce armies, and battle opponents to expand
+          territory. The project emphasizes software construction principles
+          such as test-driven development, refactoring, design patterns, and
+          maintainable architecture.
+        </p>
+      </section>
+
+      {/* Blind Traffic Navigator Assistant */}
+      <section style={{ marginBottom: 40 }}>
+        <h3 style={{ fontSize: "1.08rem", margin: 0, fontWeight: 600 }}>
+          Blind Traffic Navigator Assistant
+        </h3>
+        <p style={{ margin: "8px 0 16px" }}>
+          A computer vision system designed to assist visually impaired pedestrians
+          by detecting crosswalks, traffic signals, and obstacles in real time. The
+          assistant provides timely alerts on walk signs, light changes, and nearby
+          hazards, aiming to improve mobility, independence, and safety in urban
+          environments.
+        </p>
       </section>
     </div>
   );
