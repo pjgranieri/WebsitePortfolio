@@ -37,10 +37,10 @@ export default function Home() {
       <header style={{ textAlign: "center", marginBottom: 32 }}>
         <h1 style={{ fontSize: "2.5rem", margin: 0 }}>PJ Granieri</h1>
         <h2 style={{ fontWeight: 400, color: "#acacacff", margin: "0.5rem 0 1.5rem" }}>
-          Engineer | Builder | AI Problem Solver
+          Aspiring Software Engineer | Computer Engineering & Economics @ Pitt
         </h2>
-        <div style={{ fontSize: "1.1rem", color: "#acacacff", marginBottom: 24 }}>
-          Software Engineer Intern @ Sogeti &bull; Computer Engineering @ Pitt &bull; AI Enthusiast
+        <div style={{ fontSize: "1.05rem", color: "#acacacff", marginBottom: 24 }}>
+          Building intelligent systems at the intersection of AI, distributed systems, and software architecture
         </div>
         <div style={{ display: "flex", justifyContent: "center", gap: 16, flexWrap: "wrap", marginBottom: 24 }}>
           <a href="https://www.linkedin.com/in/pasqualegranieri" target="_blank" rel="noopener noreferrer" className="cta-btn">LinkedIn</a>
@@ -53,9 +53,16 @@ export default function Home() {
       <section style={{ marginBottom: 40 }}>
         <h3>About Me</h3>
         <p>
-          I’m PJ Granieri, a Computer Engineering student at the University of Pittsburgh passionate about building intelligent, scalable systems.<br /><br />
-          I’ve interned at Sogeti, where I helped develop an agentic AI system integrating PostgreSQL, Neo4j, and GPT-4 to automate internal QA workflows. I also TA for ECE 1140, and I’ve built projects spanning AI backtesting engines, train control simulations, and embedded systems with custom PCBs.<br /><br />
-          Whether it's software engineering, automation, or AI, I love turning complex challenges into working systems that scale.
+          I'm PJ Granieri, a Computer Engineering student at the University of Pittsburgh with a minor in Economics, passionate about building intelligent, scalable systems that solve real-world problems.
+        </p>
+        <p>
+          My experience spans the full software development lifecycle ranging from embedded systems and computer vision to agentic AI platforms and cloud-native infrastructure. At Sogeti, I developed an AI-powered QA automation system that reduced testing time by 20-30%, integrating PostgreSQL, Neo4j knowledge graphs, and GPT-4. Through my Microsoft Industry Project, I contributed to OpenEBS Mayastor, designing Prometheus exporters for Kubernetes observability.
+        </p>
+        <p>
+          I thrive on challenges that require both technical depth and systems thinking. Whether I'm architecting multi-agent AI workflows, optimizing distributed storage systems, or building real-time embedded hardware, I'm driven by the intersection of software engineering, machine learning, and infrastructure design.
+        </p>
+        <p>
+          Beyond academics, I've founded a profitable e-commerce business, mentored 60+ students as a TA for Systems Engineering, and built projects ranging from quantitative trading engines to autonomous poker AI systems. I'm constantly learning, building, and seeking opportunities to apply my skills to meaningful engineering problems.
         </p>
       </section>
 
@@ -64,27 +71,27 @@ export default function Home() {
         <h3>Featured Projects</h3>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 20 }}>
           <div style={{ border: "1px solid #eee", borderRadius: 8, padding: 16 }}>
-            <h4>Backtesting Engine for Algorithmic Trading</h4>
-            <ul>
-              <li>Built a modular Python system to simulate technical strategies</li>
-              <li>Logged metrics like Sharpe, Drawdown, and Win Rate</li>
-              <li>Modeled after QuantConnect/Backtrader</li>
+            <h4>Computer Vision Poker AI/ML Coach</h4>
+            <ul style={{ fontSize: "0.95rem" }}>
+              <li>Real-time autonomous poker player using ESP32-S3 + Azure ML</li>
+              <li>≥99% card recognition accuracy with sub-5s cloud latency</li>
+              <li>Hybrid edge-cloud architecture with OpenCV & PyTorch models</li>
+            </ul>
+          </div>
+          <div style={{ border: "1px solid #eee", borderRadius: 8, padding: 16 }}>
+            <h4>AI Assistant – Intelligent Planner</h4>
+            <ul style={{ fontSize: "0.95rem" }}>
+              <li>Agentic AI for scheduling, email, and task management</li>
+              <li>FastAPI backend + PostgreSQL with pgvector + GPT-4</li>
+              <li>Persistent memory with LangChain & Google Calendar/Gmail APIs</li>
             </ul>
           </div>
           <div style={{ border: "1px solid #eee", borderRadius: 8, padding: 16 }}>
             <h4>Train Control Simulation System</h4>
-            <ul>
-              <li>Engineered real-time simulation of trains, wayside, and CTC</li>
-              <li>Backend + PyQt frontend with maps, switch logic, and signals</li>
-              <li>Multi-line, fault-tolerant, and agile-team tested</li>
-            </ul>
-          </div>
-          <div style={{ border: "1px solid #eee", borderRadius: 8, padding: 16 }}>
-            <h4>Space Invaders “Bop-It!” Game</h4>
-            <ul>
-              <li>Embedded system with C++ + ATMega328P + KiCad PCB</li>
-              <li>Real-time reaction game with sound, lights, and scoring</li>
-              <li>Custom hardware, serial comms, and state machine control</li>
+            <ul style={{ fontSize: "0.95rem" }}>
+              <li>Real-time railway simulation with PyQt5 interactive maps</li>
+              <li>Backend + frontend integration with failure injection testing</li>
+              <li>Multi-line support with Agile workflows and IEEE standards</li>
             </ul>
           </div>
         </div>
@@ -98,22 +105,58 @@ export default function Home() {
         <h3>Experience Snapshot</h3>
         <div style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
           <div style={{ flex: 1, minWidth: 250 }}>
-            <strong>Software Engineer Intern @ Sogeti</strong><br />
-            <span>Jun – Jul 2025 | Dallas, TX</span>
-            <ul>
-              <li>Developed agentic AI infrastructure using PostgreSQL + pgvector, Neo4j, OpenAI GPT-4, and Docker</li>
-              <li>Integrated autonomous agents via orchestration platforms like Agno</li>
-              <li>Built internal QA tools with memory management, testing pipelines, and API integrations</li>
+            <strong>Microsoft Industry Project – OpenEBS/Mayastor</strong><br />
+            <span style={{ color: "#666", fontSize: "0.95rem" }}>Sept 2025 – Dec 2025 | University of Pittsburgh</span>
+            <ul style={{ fontSize: "0.95rem" }}>
+              <li>Contributed to CNCF cloud-native storage project for Kubernetes</li>
+              <li>Designed Prometheus exporter for distributed node health metrics</li>
+              <li>Built and managed K8s clusters with Docker, Helm, and kubectl</li>
+              <li>Researched Rust-based data plane and NVMe-oF integration</li>
             </ul>
           </div>
           <div style={{ flex: 1, minWidth: 250 }}>
-            <strong>Entrepreneur @ 610Street Style Shoes</strong><br />
-            <span>Apr 2021 – Aug 2023</span>
-            <ul>
-              <li>Scaled a profitable shoe reselling business based on trend analysis</li>
-              <li>Managed inventory, pricing strategy, and sales timing</li>
-              <li>Gained business ops experience and customer insight</li>
+            <strong>Software Engineer Intern @ Sogeti</strong><br />
+            <span style={{ color: "#666", fontSize: "0.95rem" }}>Jun 2025 – Jul 2025 | Dallas, TX</span>
+            <ul style={{ fontSize: "0.95rem" }}>
+              <li>Built agentic AI platform reducing QA testing time by 20-30%</li>
+              <li>Integrated PostgreSQL + pgvector, Neo4j, and GPT-4 for RAG pipelines</li>
+              <li>Developed FastAPI backend services with Docker on Azure</li>
+              <li>Earned 3 Neo4j certifications in knowledge graphs and LLMs</li>
             </ul>
+          </div>
+        </div>
+        <div style={{ textAlign: "right", marginTop: 8 }}>
+          <a href="/experience" style={{ textDecoration: "underline" }}>[View Full Experience →]</a>
+        </div>
+      </section>
+
+      {/* Skills & Technologies */}
+      <section style={{ marginBottom: 40 }}>
+        <h3>Skills & Technologies</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16 }}>
+          <div>
+            <strong style={{ fontSize: "0.95rem", color: "#555" }}>Languages</strong>
+            <div style={{ fontSize: "0.9rem", color: "#666" }}>Python, C++, Java, Rust, Go, JavaScript, C</div>
+          </div>
+          <div>
+            <strong style={{ fontSize: "0.95rem", color: "#555" }}>AI/ML</strong>
+            <div style={{ fontSize: "0.9rem", color: "#666" }}>GPT-4, LangChain, OpenCV, PyTorch, TensorFlow, RAG</div>
+          </div>
+          <div>
+            <strong style={{ fontSize: "0.95rem", color: "#555" }}>Databases</strong>
+            <div style={{ fontSize: "0.9rem", color: "#666" }}>PostgreSQL, pgvector, Neo4j, SQLAlchemy</div>
+          </div>
+          <div>
+            <strong style={{ fontSize: "0.95rem", color: "#555" }}>DevOps & Cloud</strong>
+            <div style={{ fontSize: "0.9rem", color: "#666" }}>Docker, Kubernetes, Azure, GitHub Actions, Helm</div>
+          </div>
+          <div>
+            <strong style={{ fontSize: "0.95rem", color: "#555" }}>Backend/APIs</strong>
+            <div style={{ fontSize: "0.9rem", color: "#666" }}>FastAPI, REST APIs, Microservices, Prometheus</div>
+          </div>
+          <div>
+            <strong style={{ fontSize: "0.95rem", color: "#555" }}>Embedded Systems</strong>
+            <div style={{ fontSize: "0.9rem", color: "#666" }}>ESP32, ATMega328P, Arduino, KiCad, UART/I2C</div>
           </div>
         </div>
       </section>
@@ -123,17 +166,16 @@ export default function Home() {
         <h3>Contact Me</h3>
         <p>
           Have a question, opportunity, or just want to say hi?<br />
-          Feel free to reach out, I’d love to connect.
+          Feel free to reach out, I'd love to connect.
         </p>
-        <form onSubmit={handleSubmit} style={{ maxWidth: 400 }}>
+        <div style={{ maxWidth: 400 }}>
           <input
             type="text"
             name="name"
             placeholder="Your name"
             value={formData.name}
             onChange={handleChange}
-            required
-            style={{ width: "100%", marginBottom: 8, padding: 8 }}
+            style={{ width: "100%", marginBottom: 8, padding: 8, boxSizing: "border-box" }}
           />
           <input
             type="email"
@@ -141,19 +183,17 @@ export default function Home() {
             placeholder="Your email"
             value={formData.email}
             onChange={handleChange}
-            required
-            style={{ width: "100%", marginBottom: 8, padding: 8 }}
+            style={{ width: "100%", marginBottom: 8, padding: 8, boxSizing: "border-box" }}
           />
           <textarea
             name="message"
             placeholder="Your message"
             value={formData.message}
             onChange={handleChange}
-            required
-            style={{ width: "100%", marginBottom: 8, padding: 8, minHeight: 80 }}
+            style={{ width: "100%", marginBottom: 8, padding: 8, minHeight: 80, boxSizing: "border-box" }}
           />
-          <button type="submit" style={{ padding: "8px 16px" }}>Send Message</button>
-        </form>
+          <button onClick={handleSubmit} style={{ padding: "8px 16px", cursor: "pointer" }}>Send Message</button>
+        </div>
         {status && <div style={{ marginTop: 8 }}>{status}</div>}
       </section>
 

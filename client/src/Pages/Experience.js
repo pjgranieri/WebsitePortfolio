@@ -5,6 +5,33 @@ export default function Experience() {
     <div style={{ maxWidth: 800, margin: "0 auto", fontFamily: "sans-serif", padding: 24 }}>
       <h1 style={{ fontSize: "2rem", marginBottom: 32 }}>Experience</h1>
 
+      {/* Microsoft Industry Project */}
+      <section style={{ marginBottom: 40 }}>
+        <h2 style={{ fontSize: "1.15rem", margin: 0, fontWeight: 600 }}>Industry Project Contributor – OpenEBS/Mayastor</h2>
+        <div style={{ color: "#555", marginBottom: 2 }}>
+          Microsoft Industry Project — University of Pittsburgh · Remote
+        </div>
+        <div style={{ color: "#888", marginBottom: 12 }}>
+          August 2025 – December 2025
+        </div>
+        <p>
+          Selected to contribute to OpenEBS Mayastor, a CNCF cloud-native storage project for Kubernetes. Designed and implemented a Prometheus exporter to expose node status metrics, enhancing observability across distributed storage clusters. Conducted deep technical research on Mayastor's architecture, documenting control plane microservices, Rust-based data plane engines, and NVMe-oF integration.
+        </p>
+        <p>
+          Built and managed local Kubernetes clusters using Kind, Docker, and kubectl. Deployed stateful and stateless workloads to reinforce core concepts including pods, deployments, services, and daemon sets. Explored CI/CD pipelines with GitHub Actions and Helm chart management, aligning contributions with open-source best practices and CNCF governance standards.
+        </p>
+        <div style={{ marginTop: 8, marginBottom: 4, fontWeight: 500 }}>Key Contributions:</div>
+        <ul style={{ marginTop: 0, marginBottom: 8 }}>
+          <li>Designed Prometheus exporter to expose node health metrics for distributed Kubernetes storage</li>
+          <li>Researched Mayastor's two-tier architecture: RESTful control plane and async Rust I/O data plane</li>
+          <li>Deployed and scaled Kubernetes workloads using kubectl, Helm, and declarative YAML manifests</li>
+          <li>Delivered weekly progress reports and technical documentation to Microsoft mentors</li>
+        </ul>
+        <div style={{ fontSize: "0.98rem", color: "#444" }}>
+          <strong>Technologies:</strong> Kubernetes · Docker · Rust · Go · Prometheus · Grafana · Helm · NVMe-oF · GitHub Actions
+        </div>
+      </section>
+
       {/* Teaching Assistant */}
       <section style={{ marginBottom: 40 }}>
         <h2 style={{ fontSize: "1.15rem", margin: 0, fontWeight: 600 }}>Teaching Assistant for ECE 1140: Systems and Project Engineering</h2>
@@ -15,19 +42,20 @@ export default function Experience() {
           August 2025 – Present
         </div>
         <p>
-          As a TA for ECE 1140, I mentor students through hands-on systems engineering projects. The course mirrors industry workflows, and I guide students through the entire development lifecycle: from requirement specs and software architecture to sprint planning, integration, and testing.
+          Mentor 60+ students through full-stack software and systems engineering projects, guiding teams from requirements gathering through deployment. Teach Agile/Scrum methodologies, software architecture patterns, and industry-standard tooling including GitHub for version control and Jira for sprint planning. Provide technical guidance on UML system modeling, design patterns, test-driven development, and API design.
         </p>
         <p>
-          I offer one-on-one mentorship, help debug and review technical implementations, and provide feedback on documentation and teamwork. My work emphasizes real-world readiness, agile practices, and collaborative development.
+          Evaluate student deliverables including IEEE 830 Software Requirements Specifications, IEEE 1016 Software Design Documents, and IEEE 829 Test Plans. Conduct code reviews, assess system architecture decisions, and provide feedback on testing strategies, configuration management, and risk mitigation approaches.
         </p>
         <div style={{ marginTop: 8, marginBottom: 4, fontWeight: 500 }}>Key Contributions:</div>
         <ul style={{ marginTop: 0, marginBottom: 8 }}>
-          <li>Mentored student teams on system design, software architecture, and sprint execution</li>
-          <li>Facilitated debugging sessions, code reviews, and requirement evaluations</li>
-          <li>Promoted agile principles using GitHub and Jira for collaborative project tracking</li>
+          <li>Coached teams on software architecture, design patterns, and verification/validation strategies</li>
+          <li>Evaluated technical implementations across requirements, design, testing, and deployment phases</li>
+          <li>Reinforced Agile practices using GitHub workflows, Jira Scrum boards, and sprint retrospectives</li>
+          <li>Mentored students on professional development practices including documentation and collaboration</li>
         </ul>
         <div style={{ fontSize: "0.98rem", color: "#444" }}>
-          <strong>Skills Reinforced:</strong> Technical mentoring · Agile development · Software lifecycle · Team collaboration
+          <strong>Skills Reinforced:</strong> Software architecture · Design patterns · Agile/Scrum · Code review · Testing strategies · Technical mentorship
         </div>
       </section>
 
@@ -35,25 +63,30 @@ export default function Experience() {
       <section style={{ marginBottom: 40 }}>
         <h2 style={{ fontSize: "1.15rem", margin: 0, fontWeight: 600 }}>Software Engineer Intern</h2>
         <div style={{ color: "#555", marginBottom: 2 }}>
-          Sogeti — Dallas, TX · On-site
+          Sogeti (Capgemini) — Dallas, TX · On-site
         </div>
         <div style={{ color: "#888", marginBottom: 12 }}>
           June 2025 – July 2025
         </div>
         <p>
-          At Sogeti, I contributed to the development of an agentic AI system designed to streamline internal QA processes. I integrated PostgreSQL with pgvector, Neo4j, and OpenAI GPT-4 to create autonomous agents capable of processing internal documentation and validating test cases intelligently.
+          Developed an agentic AI platform integrating PostgreSQL with pgvector, Neo4j knowledge graphs, and OpenAI GPT-4 to automate QA workflows and reduce testing time by 20-30%. Built multi-agent systems that refined raw requirements into structured user stories, validated test coverage, and generated intelligent test plans with full traceability.
         </p>
         <p>
-          Working within a containerized environment using Docker and orchestration platforms like Agno, I helped build a scalable testing pipeline that leveraged LangMem for memory persistence. I also participated in design reviews and agile sprint cycles, gaining hands-on experience in cross-functional development environments.
+          Architected backend services using FastAPI to connect AI agents with React frontends. Implemented retrieval-augmented generation (RAG) pipelines combining vector embeddings and graph relationships for enhanced context awareness. Designed database schemas supporting requirements, test cases, defects, and embeddings, while integrating qTest APIs for enterprise Agile workflows.
         </p>
         <div style={{ marginTop: 8, marginBottom: 4, fontWeight: 500 }}>Key Contributions:</div>
         <ul style={{ marginTop: 0, marginBottom: 8 }}>
-          <li>Integrated vector databases, knowledge graphs, and LLMs into agentic AI pipelines</li>
-          <li>Supported infrastructure for memory-driven agents using LangMem and Docker</li>
-          <li>Contributed to system-level design, evaluation, and agile development workflows</li>
+          <li>Built agentic AI system using Agno framework, reducing QA cycle time by 20-30% and improving coverage</li>
+          <li>Designed PostgreSQL + pgvector schemas and Neo4j knowledge graphs for semantic search and traceability</li>
+          <li>Developed FastAPI backend services and integrated qTest REST APIs for enterprise testing workflows</li>
+          <li>Implemented RAG pipelines with LangMem for persistent agent memory and context-aware reasoning</li>
+          <li>Containerized infrastructure with Docker on Azure, establishing CI/CD workflows via GitHub Actions</li>
         </ul>
         <div style={{ fontSize: "0.98rem", color: "#444" }}>
-          <strong>Technologies:</strong> PostgreSQL · pgvector · Neo4j · GPT-4 · Docker · LangMem · Agno · REST APIs
+          <strong>Technologies:</strong> Python · FastAPI · PostgreSQL · pgvector · Neo4j · GPT-4 · Docker · Azure · Agno · LangChain · REST APIs
+        </div>
+        <div style={{ fontSize: "0.95rem", color: "#666", marginTop: 8 }}>
+          <strong>Certifications:</strong> Neo4j Fundamentals · Neo4j & LLM Fundamentals · Building Knowledge Graphs with LLMs
         </div>
       </section>
 
@@ -67,19 +100,20 @@ export default function Experience() {
           April 2021 – August 2023
         </div>
         <p>
-          I launched and ran a profitable sneaker reselling business, focused on market-driven buying and selling strategies. By tracking market trends and resale value fluctuations, I created a repeatable process to optimize profit margins and increase inventory turnover.
+          Founded and operated a profitable sneaker resale business, generating consistent four-figure income through data-driven market analysis and inventory optimization. Developed repeatable systems for demand forecasting, price appraisal, and strategic timing to maximize profit margins and inventory turnover.
         </p>
         <p>
-          I handled all aspects of the business independently, including sourcing products, evaluating prices, managing inventory, and optimizing timing for maximum returns. I continually refined pricing and purchasing strategies based on performance data.
+          Tracked market trends, seasonal demand cycles, and pricing fluctuations to build predictive models for buy-low/sell-high strategies. Managed all aspects of operations independently including product sourcing, authentication, pricing strategy, sales execution, and customer relationship management.
         </p>
         <div style={{ marginTop: 8, marginBottom: 4, fontWeight: 500 }}>Key Contributions:</div>
         <ul style={{ marginTop: 0, marginBottom: 8 }}>
-          <li>Built a profitable resale business from scratch, generating consistent four-figure income</li>
-          <li>Managed product sourcing, price appraisal, and sales strategy based on trend analysis</li>
-          <li>Developed repeatable systems for inventory turnover and demand forecasting</li>
+          <li>Built profitable resale business from scratch with data-driven pricing and demand forecasting strategies</li>
+          <li>Analyzed market trends and competitor pricing to optimize timing and maximize returns on inventory</li>
+          <li>Managed end-to-end operations: sourcing, authentication, valuation, sales, and customer service</li>
+          <li>Developed systematic approaches to inventory tracking and capital efficiency optimization</li>
         </ul>
         <div style={{ fontSize: "0.98rem", color: "#444" }}>
-          <strong>Skills Applied:</strong> Entrepreneurship · Market analysis · Inventory management · Data-driven decision making
+          <strong>Skills Applied:</strong> Entrepreneurship · Market analysis · Data-driven decision making · Inventory management · Financial strategy
         </div>
       </section>
     </div>
