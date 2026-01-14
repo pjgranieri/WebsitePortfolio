@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FiGithub, FiLinkedin, FiArrowRight } from "react-icons/fi";
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -31,141 +33,241 @@ export default function Home() {
     }
   };
 
-  return (
-    <div style={{ maxWidth: 800, margin: "0 auto", fontFamily: "sans-serif", padding: 24 }}>
-      {/* Headline */}
-      <header style={{ textAlign: "center", marginBottom: 32 }}>
-        <h1 style={{ fontSize: "2.5rem", margin: 0 }}>PJ Granieri</h1>
-        <h2 style={{ fontWeight: 400, color: "#555", margin: "0.5rem 0 1.5rem" }}>
-          Engineer | Builder | AI Problem Solver
-        </h2>
-        <div style={{ fontSize: "1.1rem", color: "#333", marginBottom: 24 }}>
-          Software Engineer Intern @ Sogeti &bull; Computer Engineering @ Pitt &bull; AI Enthusiast
-        </div>
-        <div style={{ display: "flex", justifyContent: "center", gap: 16, flexWrap: "wrap", marginBottom: 24 }}>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="cta-btn">Resume</a>
-          <a href="https://www.linkedin.com/in/pasqualegranieri" target="_blank" rel="noopener noreferrer" className="cta-btn">LinkedIn</a>
-          <a href="https://github.com/pjgranieri" target="_blank" rel="noopener noreferrer" className="cta-btn">GitHub</a>
-          <a href="#contact" className="cta-btn">Contact</a>
-        </div>
-      </header>
+  const featuredProjects = [
+    {
+      title: "Computer Vision Poker AI",
+      description: "Real-time autonomous poker player using ESP32-S3 + Azure ML with 99% card recognition accuracy and sub-5s cloud latency.",
+      tags: ["Python", "PyTorch", "OpenCV", "ESP32"],
+      status: "In Progress",
+    },
+    {
+      title: "AI Assistant Platform",
+      description: "Agentic AI for scheduling, email, and task management with FastAPI backend, PostgreSQL + pgvector, and GPT-4 integration.",
+      tags: ["FastAPI", "LangChain", "PostgreSQL", "GPT-4"],
+      status: "MVP",
+    },
+    {
+      title: "Train Control Simulation",
+      description: "Real-time railway simulation with PyQt5 interactive maps, multi-line support, and IEEE-compliant fault tolerance.",
+      tags: ["Python", "PyQt5", "Systems Design"],
+      link: "/projects/train-control",
+      status: "Completed",
+    },
+  ];
 
-      {/* About Me */}
-      <section style={{ marginBottom: 40 }}>
-        <h3>About Me</h3>
-        <p>
-          I’m PJ Granieri, a Computer Engineering student at the University of Pittsburgh passionate about building intelligent, scalable systems.<br /><br />
-          I’ve interned at Sogeti, where I helped develop an agentic AI system integrating PostgreSQL, Neo4j, and GPT-4 to automate internal QA workflows. I also TA for ECE 1140, and I’ve built projects spanning AI backtesting engines, train control simulations, and embedded systems with custom PCBs.<br /><br />
-          Whether it's software engineering, automation, or AI, I love turning complex challenges into working systems that scale.
-        </p>
+  const skills = [
+    { category: "Languages", items: "Python, C++, Java, Rust, Go, JavaScript, C" },
+    { category: "AI/ML", items: "GPT-4, LangChain, OpenCV, PyTorch, TensorFlow, RAG" },
+    { category: "Databases", items: "PostgreSQL, pgvector, Neo4j, SQLAlchemy" },
+    { category: "DevOps & Cloud", items: "Docker, Kubernetes, Azure, GitHub Actions, Helm" },
+    { category: "Backend/APIs", items: "FastAPI, REST APIs, Microservices, Prometheus" },
+    { category: "Embedded", items: "ESP32, ATMega328P, Arduino, KiCad, UART/I2C" },
+  ];
+
+  return (
+    <div className="page">
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="container">
+          <div className="hero-content">
+            <p className="hero-eyebrow">Software Engineer</p>
+            <h1 className="hero-title">
+              Building <em>intelligent</em><br />
+              systems that matter
+            </h1>
+            <p className="hero-subtitle">
+              I'm PJ Granieri, a Computer Engineering student at Pitt specializing in
+              AI systems, distributed infrastructure, and full-stack development.
+              Currently building agentic AI platforms and cloud-native solutions.
+            </p>
+            <div className="hero-cta">
+              <Link to="/projects" className="btn btn-primary">
+                View Projects
+              </Link>
+              <a
+                href="https://github.com/pjgranieri"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline"
+              >
+                <FiGithub /> GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/pasqualegranieri"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline"
+              >
+                <FiLinkedin /> LinkedIn
+              </a>
+            </div>
+          </div>
+          <div className="hero-decoration" aria-hidden="true"></div>
+        </div>
       </section>
 
       {/* Featured Projects */}
-      <section style={{ marginBottom: 40 }}>
-        <h3>Featured Projects</h3>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 20 }}>
-          <div style={{ border: "1px solid #eee", borderRadius: 8, padding: 16 }}>
-            <h4>Backtesting Engine for Algorithmic Trading</h4>
-            <ul>
-              <li>Built a modular Python system to simulate technical strategies</li>
-              <li>Logged metrics like Sharpe, Drawdown, and Win Rate</li>
-              <li>Modeled after QuantConnect/Backtrader</li>
-            </ul>
+      <section className="section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">01 Featured Work</span>
+            <h2>Selected Projects</h2>
           </div>
-          <div style={{ border: "1px solid #eee", borderRadius: 8, padding: 16 }}>
-            <h4>Train Control Simulation System</h4>
-            <ul>
-              <li>Engineered real-time simulation of trains, wayside, and CTC</li>
-              <li>Backend + PyQt frontend with maps, switch logic, and signals</li>
-              <li>Multi-line, fault-tolerant, and agile-team tested</li>
-            </ul>
+          <div className="projects-grid stagger-in">
+            {featuredProjects.map((project, index) => (
+              <article key={index} className="card project-card">
+                <span className="card-label">{project.status}</span>
+                <h3 className="card-title">{project.title}</h3>
+                <p className="card-description">{project.description}</p>
+                <div className="card-tags">
+                  {project.tags.map((tag, i) => (
+                    <span key={i} className="tag">{tag}</span>
+                  ))}
+                </div>
+                {project.link && (
+                  <div className="card-meta">
+                    <Link to={project.link} className="btn btn-ghost">
+                      View Details
+                    </Link>
+                  </div>
+                )}
+              </article>
+            ))}
           </div>
-          <div style={{ border: "1px solid #eee", borderRadius: 8, padding: 16 }}>
-            <h4>Space Invaders “Bop-It!” Game</h4>
-            <ul>
-              <li>Embedded system with C++ + ATMega328P + KiCad PCB</li>
-              <li>Real-time reaction game with sound, lights, and scoring</li>
-              <li>Custom hardware, serial comms, and state machine control</li>
-            </ul>
-          </div>
-        </div>
-        <div style={{ textAlign: "right", marginTop: 8 }}>
-          <a href="/projects" style={{ textDecoration: "underline" }}>[View All Projects →]</a>
-        </div>
-      </section>
-
-      {/* Experience Snapshot */}
-      <section style={{ marginBottom: 40 }}>
-        <h3>Experience Snapshot</h3>
-        <div style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
-          <div style={{ flex: 1, minWidth: 250 }}>
-            <strong>Software Engineer Intern @ Sogeti</strong><br />
-            <span>Jun – Jul 2025 | Dallas, TX</span>
-            <ul>
-              <li>Developed agentic AI infrastructure using PostgreSQL + pgvector, Neo4j, OpenAI GPT-4, and Docker</li>
-              <li>Integrated autonomous agents via orchestration platforms like Agno</li>
-              <li>Built internal QA tools with memory management, testing pipelines, and API integrations</li>
-            </ul>
-          </div>
-          <div style={{ flex: 1, minWidth: 250 }}>
-            <strong>Entrepreneur @ 610Street Style Shoes</strong><br />
-            <span>Apr 2021 – Aug 2023</span>
-            <ul>
-              <li>Scaled a profitable shoe reselling business based on trend analysis</li>
-              <li>Managed inventory, pricing strategy, and sales timing</li>
-              <li>Gained business ops experience and customer insight</li>
-            </ul>
+          <div className="mt-xl" style={{ textAlign: "right" }}>
+            <Link to="/projects" className="btn btn-ghost">
+              View All Projects
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Contact Me */}
-      <section id="contact" style={{ marginBottom: 40 }}>
-        <h3>Contact Me</h3>
-        <p>
-          Have a question, opportunity, or just want to say hi?<br />
-          Feel free to reach out, I’d love to connect.
-        </p>
-        <form onSubmit={handleSubmit} style={{ maxWidth: 400 }}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            style={{ width: "100%", marginBottom: 8, padding: 8 }}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            style={{ width: "100%", marginBottom: 8, padding: 8 }}
-          />
-          <textarea
-            name="message"
-            placeholder="Your message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            style={{ width: "100%", marginBottom: 8, padding: 8, minHeight: 80 }}
-          />
-          <button type="submit" style={{ padding: "8px 16px" }}>Send Message</button>
-        </form>
-        {status && <div style={{ marginTop: 8 }}>{status}</div>}
+      {/* Experience Preview */}
+      <section className="section" style={{ background: "var(--color-bg-elevated)" }}>
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">02 Experience</span>
+            <h2>Where I've Worked</h2>
+          </div>
+          <div className="timeline stagger-in">
+            <div className="timeline-item">
+              <span className="timeline-date">Aug 2025 - Dec 2025</span>
+              <h3 className="timeline-title">Industry Project Contributor</h3>
+              <p className="timeline-company">Microsoft / OpenEBS Mayastor</p>
+              <div className="timeline-content">
+                <p>
+                  Contributing to CNCF cloud-native storage for Kubernetes. Designed Prometheus
+                  exporters for distributed node health metrics and researched Rust-based async I/O architectures.
+                </p>
+              </div>
+              <div className="timeline-tech">
+                <span className="tag">Kubernetes</span>
+                <span className="tag">Rust</span>
+                <span className="tag">Prometheus</span>
+                <span className="tag">Go</span>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <span className="timeline-date">Jun 2025 - Jul 2025</span>
+              <h3 className="timeline-title">Software Engineer Intern</h3>
+              <p className="timeline-company">Sogeti (Capgemini)</p>
+              <div className="timeline-content">
+                <p>
+                  Built an agentic AI platform that reduced QA testing time by 20-30%. Integrated
+                  PostgreSQL + pgvector, Neo4j knowledge graphs, and GPT-4 for intelligent test automation.
+                </p>
+              </div>
+              <div className="timeline-tech">
+                <span className="tag">Python</span>
+                <span className="tag">FastAPI</span>
+                <span className="tag">Neo4j</span>
+                <span className="tag">GPT-4</span>
+              </div>
+            </div>
+          </div>
+          <div className="mt-xl" style={{ textAlign: "right" }}>
+            <Link to="/experience" className="btn btn-ghost">
+              View Full Experience
+            </Link>
+          </div>
+        </div>
       </section>
 
-      {/* Footer */}
-      <footer style={{ borderTop: "1px solid #ccc", paddingTop: 16, textAlign: "center", color: "#888" }}>
-        PJ Granieri © 2025 &nbsp;|&nbsp;
-        <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp;|&nbsp;
-        <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp;|&nbsp;
-        <a href="https://leetcode.com/u/pj_gran" target="_blank" rel="noopener noreferrer">LeetCode</a> &nbsp;|&nbsp;
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-      </footer>
+      {/* Skills */}
+      <section className="section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">03 Expertise</span>
+            <h2>Skills & Technologies</h2>
+          </div>
+          <div className="skills-grid stagger-in">
+            {skills.map((skill, index) => (
+              <div key={index} className="skill-category">
+                <h4 className="skill-category-title">{skill.category}</h4>
+                <p className="skill-list">{skill.items}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="section" id="contact">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">04 Contact</span>
+            <h2>Let's Connect</h2>
+            <p className="text-secondary mt-md" style={{ maxWidth: 500 }}>
+              Have a question, opportunity, or just want to say hi?
+              I'd love to hear from you.
+            </p>
+          </div>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label className="form-label" htmlFor="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="form-input"
+                placeholder="Your name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label className="form-label" htmlFor="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                className="form-input"
+                placeholder="your@email.com"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label className="form-label" htmlFor="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                className="form-textarea"
+                placeholder="What's on your mind?"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <button type="submit" className="btn btn-primary">
+              Send Message <FiArrowRight />
+            </button>
+            {status && <div className="form-status">{status}</div>}
+          </form>
+        </div>
+      </section>
     </div>
   );
 }

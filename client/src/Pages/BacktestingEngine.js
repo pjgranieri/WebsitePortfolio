@@ -3,26 +3,26 @@ import React from "react";
 export default function BacktestingEngine() {
   return (
     <div style={{ maxWidth: 800, margin: "0 auto", fontFamily: "sans-serif", padding: 24 }}>
-      <h1 style={{ fontSize: "1.7rem", marginBottom: 8 }}>📊 Backtesting Engine for Algorithmic Trading Strategies</h1>
+      <h1 style={{ fontSize: "1.7rem", marginBottom: 8 }}>Backtesting Engine for Algorithmic Trading Strategies</h1>
       <div style={{ color: "#888", marginBottom: 8 }}>
         Mar 2025 – May 2025<br />
         Independent Project
       </div>
       <div style={{ marginBottom: 16 }}>
         <a href="https://github.com/pjgranieri/backtesting-engine" target="_blank" rel="noopener noreferrer" style={{ marginRight: 16 }}>
-          🔗 GitHub Repo
+          GitHub Repo
         </a>
         <a href="https://www.youtube.com/watch?v=APT564DnD9s" target="_blank" rel="noopener noreferrer">
-          🎥 Video Demo
+          Video Demo
         </a>
       </div>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>🧠 Overview</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Overview</h2>
       <p>
         This backtesting engine is a modular Python framework designed to simulate, visualize, and evaluate algorithmic trading strategies using historical financial data. Built from scratch, it supports plug-and-play strategy development, batch testing across tickers, and generates key performance metrics like Sharpe Ratio, Max Drawdown, and Win Rate — modeled after professional tools like QuantConnect and Backtrader.
       </p>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>⚙️ Key Features</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Key Features</h2>
       <ul>
         <li>
           <strong>Fully Custom Backtesting Pipeline:</strong> Simulates trade execution on OHLCV (Open, High, Low, Close, Volume) data. Tracks equity, cash, and portfolio value over time. Annotates trades with entry/exit points and visualizes holding periods.
@@ -35,17 +35,17 @@ export default function BacktestingEngine() {
         </li>
         <li>
           <strong>Performance Metrics and Reporting:</strong> Automatically computes:<br />
-          📈 Total Return<br />
-          📉 Max Drawdown<br />
-          🟢 Win Rate<br />
-          📊 Sharpe Ratio<br />
+          Total Return<br />
+          Max Drawdown<br />
+          Win Rate<br />
+          Sharpe Ratio<br />
           Generates: <code>equity_curve.png</code>, <code>metrics.txt</code>, <code>summary.csv</code>, and <code>trades.csv</code>. Equity plots with buy/sell signals over time.
         </li>
       </ul>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>🗂️ Project Structure</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Project Structure</h2>
       <div style={{
-        background: "#f6f8fa",
+        background: "#000000ff",
         padding: 12,
         borderRadius: 6,
         fontSize: "0.97rem",
@@ -74,7 +74,7 @@ backtesting-engine/
   requirements.txt
       </div>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>⚡ Getting Started</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Getting Started</h2>
       <ol>
         <li>Place historical CSV files in the <code>data/</code> folder, formatted as: <br /><code>Date, Open, High, Low, Close, Volume</code></li>
         <li>Run the backtester via command line:<br /><code>python main.py</code></li>
@@ -82,9 +82,9 @@ backtesting-engine/
         <li>Find results in <code>results/</code> with equity plots, trade logs, CSV metrics and summary reports</li>
       </ol>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>📉 Sample Output</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Sample Output</h2>
       <div style={{
-        background: "#f6f8fa",
+        background: "#000000ff",
         padding: 12,
         borderRadius: 6,
         fontSize: "0.97rem",
@@ -106,7 +106,7 @@ Output includes:
   summary.csv
       </div>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>🧩 Built-In Strategies</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Built-In Strategies</h2>
       <ul>
         <li><strong>SampleStrategy</strong> – Simple moving average crossover</li>
         <li><strong>RSIStrategy</strong> – RSI-based overbought/oversold triggers</li>
@@ -115,14 +115,14 @@ Output includes:
         <li><strong>FrequentTradingStrategy</strong> – High-volume pattern detection</li>
       </ul>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>🔮 Future Improvements</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Future Improvements</h2>
       <ul>
         <li>Add support for slippage and transaction costs</li>
         <li>Integrate position sizing and risk management</li>
         <li>Develop a lightweight GUI interface for strategy execution and visualization</li>
       </ul>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>💻 Tech Stack</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Tech Stack</h2>
       <ul>
         <li><strong>Languages:</strong> Python (OOP)</li>
         <li><strong>Libraries:</strong> pandas, numpy, matplotlib</li>

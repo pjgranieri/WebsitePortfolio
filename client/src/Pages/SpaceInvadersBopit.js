@@ -3,21 +3,21 @@ import React from "react";
 export default function SpaceInvadersBopit() {
   return (
     <div style={{ maxWidth: 800, margin: "0 auto", fontFamily: "sans-serif", padding: 24 }}>
-      <h1 style={{ fontSize: "1.7rem", marginBottom: 8 }}>🕹️ Space Invaders "Bop-It!" Game with ATMega328P & Custom PCB</h1>
+      <h1 style={{ fontSize: "1.7rem", marginBottom: 8 }}>Space Invaders "Bop-It!" Game with ATMega328P & Custom PCB</h1>
       <div style={{ color: "#888", marginBottom: 8 }}>
         Mar 2025 – Apr 2025<br />
         University of Pittsburgh | Embedded Systems Project
       </div>
       <div style={{ marginBottom: 16 }}>
         <a href="https://github.com/pjgranieri/SpaceInvaders" target="_blank" rel="noopener noreferrer" style={{ marginRight: 16 }}>
-          🔗 GitHub Repo
+          GitHub Repo
         </a>
         <a href="https://www.youtube.com/watch?v=FF51uR-_Np4" target="_blank" rel="noopener noreferrer">
-          🎥 Video Demo
+          Video Demo
         </a>
       </div>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>🧠 Overview</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Overview</h2>
       <p>
         This embedded game blends the fast-paced reflex mechanics of Bop-It with the space-themed action of Space Invaders, implemented on an ATMega328P microcontroller. The player is challenged to respond to randomized prompts using three physical inputs — steering wheel, throttle, and fire button — while progressing through increasingly difficult stages governed by finite state machine (FSM) logic.
       </p>
@@ -25,7 +25,7 @@ export default function SpaceInvadersBopit() {
         The project features a custom PCB, real-time input processing, audio-visual feedback, and a scoring display, all wrapped in a fully integrated physical enclosure.
       </p>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>⚙️ Key Features</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Key Features</h2>
       <ul>
         <li>
           <strong>Embedded FSM Gameplay:</strong>
@@ -38,9 +38,9 @@ export default function SpaceInvadersBopit() {
         <li>
           <strong>Physical Input Controls:</strong>
           <ul>
-            <li>🕹️ Steering Wheel (analog input)</li>
-            <li>🚀 Throttle Lever (analog input)</li>
-            <li>🔫 Push Button (digital input)</li>
+            <li>Steering Wheel (analog input)</li>
+            <li>Throttle Lever (analog input)</li>
+            <li>Push Button (digital input)</li>
           </ul>
         </li>
         <li>
@@ -63,9 +63,9 @@ export default function SpaceInvadersBopit() {
         </li>
       </ul>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>🗂️ Repository Structure</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Repository Structure</h2>
       <div style={{
-        background: "#f6f8fa",
+        background: "#000000ff",
         padding: 12,
         borderRadius: 6,
         fontSize: "0.97rem",
@@ -83,7 +83,7 @@ SpaceInvaders/
   README.md
       </div>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>🧪 How It Works</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>How It Works</h2>
       <ul>
         <li>Players are shown a randomized command on the LCD.</li>
         <li>They respond using the correct physical control:
@@ -98,7 +98,7 @@ SpaceInvaders/
         <li>The goal is to reach 99 points without a single mistake.</li>
       </ul>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>🧰 Hardware/Software Integration</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Hardware/Software Integration</h2>
       <ul>
         <li><strong>Microcontroller:</strong> ATMega328P</li>
         <li><strong>Languages:</strong> C++, Arduino</li>
@@ -106,14 +106,14 @@ SpaceInvaders/
         <li><strong>Tools:</strong> KiCad (PCB), Onshape (CAD), DFPlayer (Audio), Soldering/Prototyping</li>
       </ul>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>👨‍💻 Team & Roles</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Team & Roles</h2>
       <ul>
         <li>PJ Granieri — Hardware Design, PCB Fabrication, FSM Logic</li>
         <li>Joshua Krymgold — Software Development</li>
         <li>Aragya Goyal — CAD & Enclosure Fabrication</li>
       </ul>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>🔧 Build Instructions (from GitHub)</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Build Instructions (from GitHub)</h2>
       <ol>
         <li>Upload <code>src/main.ino</code> to ATMega328P or Arduino Uno-compatible board</li>
         <li>Assemble the PCB using KiCad files</li>
@@ -122,7 +122,7 @@ SpaceInvaders/
         <li>Power the system with regulated 5V (e.g., 9V battery + onboard regulator)</li>
       </ol>
 
-      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>💡 Implementation Notes</h2>
+      <h2 style={{ fontSize: "1.15rem", margin: "24px 0 8px" }}>Implementation Notes</h2>
       <ul>
         <li>Analog inputs sampled at startup to compensate for drift</li>
         <li>AVCC tied to 5V for proper ADC operation</li>
