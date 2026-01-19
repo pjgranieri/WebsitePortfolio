@@ -8,6 +8,8 @@ import About from "./Pages/About";
 import TrainControl from "./Pages/TrainControl";
 import BacktestingEngine from "./Pages/BacktestingEngine";
 import SpaceInvadersBopit from "./Pages/SpaceInvadersBopit";
+import RealTimePokerAssistant from "./Pages/RealTimePokerAssistant";
+import Careerly from "./Pages/Careerly";
 import "./App.css";
 
 function Navigation() {
@@ -126,6 +128,8 @@ function App() {
           <Route path="/projects/train-control" element={<TrainControl />} />
           <Route path="/projects/backtesting-engine" element={<BacktestingEngine />} />
           <Route path="/projects/space-invaders-bopit" element={<SpaceInvadersBopit />} />
+          <Route path="/projects/real-time-poker-assistant" element={<RealTimePokerAssistant />} />
+          <Route path="/projects/careerly" element={<Careerly />} />
         </Routes>
       </main>
       <Footer />

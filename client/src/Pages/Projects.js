@@ -5,6 +5,16 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 const projects = {
   completed: [
     {
+      title: "Real-Time Poker Assistant",
+      description: "An ML-powered poker coaching system providing real-time strategic recommendations during live gameplay. Features ESP32-S3 with 4 YOLOv8 models (99%+ accuracy), custom MLP, and Azure-hosted inference with sub-3s latency.",
+      tags: ["Python", "ESP32-S3", "YOLOv8", "Azure", "C++", "Computer Vision"],
+      link: "/projects/real-time-poker-assistant",
+      github: "https://github.com/pjgranieri/Portable-Real-Time-Poker-Assistant",
+      external: "https://youtu.be/1nT3llKM1yY",
+      externalLabel: "Demo",
+      featured: true,
+    },
+    {
       title: "Train Control Simulation System",
       description: "A modular simulation platform integrating Train, Wayside, and Central Traffic Control (CTC) components. Features real-time PyQt5 frontend with interactive maps, fault-tolerant backend logic, and multi-line support.",
       tags: ["Python", "PyQt5", "Systems Design", "IEEE Standards"],
@@ -24,34 +34,15 @@ const projects = {
       link: "/projects/space-invaders-bopit",
     },
   ],
-  mvp: [
-    {
-      title: "Portfolio Website",
-      description: "A personal portfolio site built with React and Express backend featuring an interactive contact form, project showcases, and responsive design optimized for all devices.",
-      tags: ["React", "Node.js", "Express", "Netlify"],
-    },
-    {
-      title: "AI Email & Calendar Assistant",
-      description: "A personal AI assistant that reads, summarizes, and prioritizes emails with calendar integration. Features natural language understanding and cross-platform syncing.",
-      tags: ["FastAPI", "LangChain", "PostgreSQL", "GPT-4"],
-    },
-  ],
   inProgress: [
     {
-      title: "Autonomous Poker AI",
-      description: "An embedded system that autonomously plays live poker using computer vision and AI decision engine. Integrates ESP32-S3, Azure ML, and lightweight models for real-time betting decisions.",
-      tags: ["Python", "PyTorch", "OpenCV", "ESP32", "Azure"],
+      title: "Careerly",
+      description: "A production-ready, full-stack SaaS platform that leverages advanced AI to help job seekers optimize resumes, practice interviews, track applications, and accelerate their career growth.",
+      tags: ["React", "FastAPI", "PostgreSQL", "GPT-5", "Docker"],
+      link: "/projects/careerly",
+      external: "https://www.usecareerly.com",
+      externalLabel: "Live Site",
       featured: true,
-    },
-    {
-      title: "HotCiv Strategy Game",
-      description: "A Java-based 2-4 player turn-based strategy game emphasizing software construction principles: TDD, refactoring, design patterns, and maintainable architecture.",
-      tags: ["Java", "TDD", "Design Patterns", "OOP"],
-    },
-    {
-      title: "Blind Traffic Navigator",
-      description: "A computer vision system assisting visually impaired pedestrians by detecting crosswalks, traffic signals, and obstacles with real-time alerts.",
-      tags: ["Python", "OpenCV", "Computer Vision", "Accessibility"],
     },
   ],
 };
@@ -81,7 +72,7 @@ function ProjectCard({ project, status }) {
           )}
           {project.external && (
             <a href={project.external} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
-              <FiExternalLink /> Demo
+              <FiExternalLink /> {project.externalLabel || "Demo"}
             </a>
           )}
         </div>
@@ -128,19 +119,6 @@ export default function Projects() {
           <div className="projects-grid stagger-in">
             {projects.completed.map((project, index) => (
               <ProjectCard key={index} project={project} status="Completed" />
-            ))}
-          </div>
-        </section>
-
-        {/* MVP / Prototype */}
-        <section className="section">
-          <div className="section-header">
-            <span className="section-label">03 Prototypes</span>
-            <h2>MVP / Prototype</h2>
-          </div>
-          <div className="projects-grid stagger-in">
-            {projects.mvp.map((project, index) => (
-              <ProjectCard key={index} project={project} status="MVP" />
             ))}
           </div>
         </section>
