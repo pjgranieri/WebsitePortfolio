@@ -1,50 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { FiGithub, FiLinkedin, FiArrowRight } from "react-icons/fi";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 export default function Home() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [status, setStatus] = useState("");
-
-  const handleChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
-    try {
-      const res = await fetch("http://localhost:5001/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      if (res.ok) {
-        setStatus("Message sent!");
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        setStatus("Failed to send message.");
-      }
-    } catch {
-      setStatus("Failed to send message.");
-    }
-  };
 
   const featuredProjects = [
     {
-      title: "Computer Vision Poker AI",
-      description: "Real-time autonomous poker player using ESP32-S3 + Azure ML with 99% card recognition accuracy and sub-5s cloud latency.",
-      tags: ["Python", "PyTorch", "OpenCV", "ESP32"],
-      status: "In Progress",
+      title: "Real-Time Poker Assistant",
+      description: "Real-time poker coaching system using ESP32-S3 with 4 YOLOv8 models (99%+ accuracy) and custom MLP. Sub-3s latency with Azure-hosted inference.",
+      tags: ["Python", "ESP32-S3", "YOLOv8", "Azure"],
+      status: "Completed",
     },
     {
-      title: "AI Assistant Platform",
-      description: "Agentic AI for scheduling, email, and task management with FastAPI backend, PostgreSQL + pgvector, and GPT-4 integration.",
-      tags: ["FastAPI", "LangChain", "PostgreSQL", "GPT-4"],
-      status: "MVP",
+      title: "Careerly",
+      description: "A production-ready, full-stack SaaS platform that leverages advanced AI to help job seekers optimize resumes, practice interviews, and track applications.",
+      tags: ["React", "FastAPI", "PostgreSQL", "GPT-5"],
+      status: "In Progress",
     },
     {
       title: "Train Control Simulation",
@@ -151,30 +122,30 @@ export default function Home() {
           </div>
           <div className="timeline stagger-in">
             <div className="timeline-item">
-              <span className="timeline-date">Aug 2025 - Dec 2025</span>
-              <h3 className="timeline-title">Industry Project Contributor</h3>
+              <span className="timeline-date">Sep 2025 - Present</span>
+              <h3 className="timeline-title">Software Engineer Intern - Microsoft Industry Project</h3>
               <p className="timeline-company">Microsoft / OpenEBS Mayastor</p>
               <div className="timeline-content">
                 <p>
-                  Contributing to CNCF cloud-native storage for Kubernetes. Designed Prometheus
-                  exporters for distributed node health metrics and researched Rust-based async I/O architectures.
+                  Contributing to CNCF cloud-native storage for Kubernetes. Authored OpenEBS Enhancement Proposal
+                  (OEP-4111) for Prometheus metrics architecture and developing features in Go and Rust.
                 </p>
               </div>
               <div className="timeline-tech">
                 <span className="tag">Kubernetes</span>
+                <span className="tag">Go</span>
                 <span className="tag">Rust</span>
                 <span className="tag">Prometheus</span>
-                <span className="tag">Go</span>
               </div>
             </div>
             <div className="timeline-item">
-              <span className="timeline-date">Jun 2025 - Jul 2025</span>
+              <span className="timeline-date">Jun 2025 - Aug 2025</span>
               <h3 className="timeline-title">Software Engineer Intern</h3>
               <p className="timeline-company">Sogeti (Capgemini)</p>
               <div className="timeline-content">
                 <p>
-                  Built an agentic AI platform that reduced QA testing time by 20-30%. Integrated
-                  PostgreSQL + pgvector, Neo4j knowledge graphs, and GPT-4 for intelligent test automation.
+                  Pioneered an agentic AI platform improving QA efficiency by 30%. Integrated
+                  PostgreSQL + pgvector, Neo4j knowledge graphs, and GPT-4 for automated workflow optimization.
                 </p>
               </div>
               <div className="timeline-tech">
@@ -211,63 +182,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact */}
-      <section className="section" id="contact">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">04 Contact</span>
-            <h2>Let's Connect</h2>
-            <p className="text-secondary mt-md" style={{ maxWidth: 500 }}>
-              Have a question, opportunity, or just want to say hi?
-              I'd love to hear from you.
-            </p>
-          </div>
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label className="form-label" htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="form-input"
-                placeholder="Your name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label className="form-label" htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="form-input"
-                placeholder="your@email.com"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label className="form-label" htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                className="form-textarea"
-                placeholder="What's on your mind?"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <button type="submit" className="btn btn-primary">
-              Send Message <FiArrowRight />
-            </button>
-            {status && <div className="form-status">{status}</div>}
-          </form>
-        </div>
-      </section>
     </div>
   );
 }

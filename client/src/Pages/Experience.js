@@ -2,59 +2,78 @@ import React from "react";
 
 const experiences = [
   {
-    title: "Industry Project Contributor",
-    subtitle: "OpenEBS/Mayastor",
-    company: "Microsoft Industry Project",
-    location: "University of Pittsburgh",
-    date: "Aug 2025 - Dec 2025",
+    title: "Teaching Assistant",
+    subtitle: "ECE 0302: Data Structures and Algorithms",
+    company: "University of Pittsburgh",
+    location: "Pittsburgh, PA",
+    date: "Jan 2026 - Present",
     description: [
-      "Selected to contribute to OpenEBS Mayastor, a CNCF cloud-native storage project for Kubernetes. Designed and implemented a Prometheus exporter to expose node status metrics, enhancing observability across distributed storage clusters.",
-      "Built and managed local Kubernetes clusters using Kind, Docker, and kubectl. Deployed stateful and stateless workloads while exploring CI/CD pipelines with GitHub Actions and Helm chart management."
+      "Grade programming assignments and projects focused on implementing core data structures (stacks, queues, trees, heaps, hash tables) and algorithms (sorting, searching, recursion) in C++.",
+      "Conduct weekly office hours to debug student code, explain algorithmic concepts, and guide students through problem-solving approaches while supporting understanding of algorithm complexity analysis and memory management."
     ],
     highlights: [
-      "Designed Prometheus exporter to expose node health metrics for distributed Kubernetes storage",
-      "Researched Mayastor's two-tier architecture: RESTful control plane and async Rust I/O data plane",
-      "Deployed and scaled Kubernetes workloads using kubectl, Helm, and declarative YAML manifests",
-      "Delivered weekly progress reports and technical documentation to Microsoft mentors"
+      "Evaluated student implementations of fundamental data structures and algorithms in C++",
+      "Conducted weekly office hours to assist students with debugging and algorithmic problem-solving",
+      "Guided students through complexity analysis (Big-O notation) and efficient algorithm design",
+      "Reinforced best practices in memory management, pointer usage, and C++ implementation strategies"
     ],
-    technologies: ["Kubernetes", "Docker", "Rust", "Go", "Prometheus", "Grafana", "Helm", "GitHub Actions"],
+    technologies: ["C++", "Data Structures", "Algorithms", "Algorithm Analysis", "Memory Management", "Teaching"],
+  },
+  {
+    title: "Software Engineer Intern",
+    subtitle: "Microsoft Industry Project - OpenEBS Mayastor",
+    company: "Microsoft",
+    location: "Pittsburgh, PA (Hybrid)",
+    date: "Sep 2025 - Present",
+    description: [
+      "Contributing to OpenEBS Mayastor, a CNCF cloud-native storage engine for Kubernetes, implementing Prometheus metrics and observability enhancements to improve operational visibility for distributed storage systems.",
+      "Developed features in Go and Rust within a production-grade codebase, navigating control-plane/data-plane architecture, RESTful APIs, and container-orchestration patterns used by hundreds of global contributors."
+    ],
+    highlights: [
+      "Authored OpenEBS Enhancement Proposal (OEP-4111) for node-status metrics architecture, receiving maintainer approval for implementation",
+      "Designed and implemented Prometheus exporter to expose node health metrics for distributed Kubernetes storage",
+      "Developed features in Go and Rust navigating production-grade control-plane/data-plane architecture",
+      "Collaborated with Microsoft engineers through weekly technical reviews on distributed systems design",
+      "Built expertise in formal documentation processes (OEPs) and enterprise-grade open-source contribution workflows"
+    ],
+    technologies: ["Kubernetes", "Go", "Rust", "Prometheus", "Docker", "Distributed Systems", "Cloud-Native Storage", "RESTful APIs"],
   },
   {
     title: "Teaching Assistant",
     subtitle: "ECE 1140: Systems and Project Engineering",
     company: "University of Pittsburgh",
     location: "Pittsburgh, PA",
-    date: "Aug 2025 - Present",
+    date: "Aug 2025 - Dec 2025",
     description: [
-      "Mentor 60+ students through full-stack software and systems engineering projects, guiding teams from requirements gathering through deployment. Teach Agile/Scrum methodologies, software architecture patterns, and industry-standard tooling.",
-      "Evaluate student deliverables including IEEE 830 SRS, IEEE 1016 SDD, and IEEE 829 Test Plans. Conduct code reviews and provide feedback on testing strategies and architecture decisions."
+      "Mentored student teams through the full software/systems development lifecycle: requirements, architecture, sprint planning, integration, and testing.",
+      "Hosted iteration and design reviews to evaluate technical implementations, software architecture, and documentation, providing feedback to improve quality and alignment with project requirements."
     ],
     highlights: [
       "Coached teams on software architecture, design patterns, and verification/validation strategies",
       "Evaluated technical implementations across requirements, design, testing, and deployment phases",
-      "Reinforced Agile practices using GitHub workflows, Jira Scrum boards, and sprint retrospectives",
-      "Mentored students on professional development practices including documentation and collaboration"
+      "Promoted agile practices using GitHub workflows and Jira, reinforcing real-world readiness",
+      "Mentored students on professional development practices including documentation and team collaboration"
     ],
-    technologies: ["Agile/Scrum", "Software Architecture", "Code Review", "TDD", "UML", "Technical Mentorship"],
+    technologies: ["Agile/Scrum", "Software Architecture", "Code Review", "GitHub", "Jira", "Technical Mentorship", "TDD"],
   },
   {
     title: "Software Engineer Intern",
     subtitle: "AI/ML Platform Development",
     company: "Sogeti (Capgemini)",
     location: "Dallas, TX",
-    date: "Jun 2025 - Jul 2025",
+    date: "Jun 2025 - Aug 2025",
     description: [
-      "Developed an agentic AI platform integrating PostgreSQL with pgvector, Neo4j knowledge graphs, and OpenAI GPT-4 to automate QA workflows and reduce testing time by 20-30%.",
-      "Architected backend services using FastAPI to connect AI agents with React frontends. Implemented RAG pipelines combining vector embeddings and graph relationships for enhanced context awareness."
+      "Pioneered an agentic AI platform with a team of 3 to automate QA workflows, integrating vector databases (PostgreSQL + pgvector), knowledge graphs (Neo4j), and GPT-4, improving efficiency by 30% and saving hundreds of hours of manual labor.",
+      "Designed a solution to automate requirements and user story generation, eliminating manual creation and linking processes across the QA lifecycle."
     ],
     highlights: [
-      "Built agentic AI system using Agno framework, reducing QA cycle time by 20-30%",
-      "Designed PostgreSQL + pgvector schemas and Neo4j knowledge graphs for semantic search",
+      "Built agentic AI system using Agno framework, improving QA efficiency by 30%",
+      "Designed PostgreSQL + pgvector schemas and Neo4j knowledge graphs for semantic search and RAG pipelines",
       "Developed FastAPI backend services and integrated qTest REST APIs for enterprise workflows",
-      "Implemented RAG pipelines with LangMem for persistent agent memory",
-      "Containerized infrastructure with Docker on Azure, establishing CI/CD via GitHub Actions"
+      "Implemented autonomous agent pipelines with Docker and API integration using LangMem for memory management",
+      "Followed agile practices with iterative development, sprint planning, and continuous integration"
     ],
-    technologies: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Neo4j", "GPT-4", "Docker", "Azure", "LangChain"],
+    technologies: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Neo4j", "GPT-4", "Docker", "Azure", "LangChain", "Agno"],
     certifications: ["Neo4j Fundamentals", "Neo4j & LLM Fundamentals", "Building Knowledge Graphs with LLMs"],
   },
   {
@@ -64,8 +83,8 @@ const experiences = [
     location: "Royersford, PA",
     date: "Apr 2021 - Aug 2023",
     description: [
-      "Founded and operated a profitable sneaker resale business, generating consistent four-figure income through data-driven market analysis and inventory optimization.",
-      "Tracked market trends, seasonal demand cycles, and pricing fluctuations to build predictive models for buy-low/sell-high strategies. Managed all aspects of operations independently."
+      "Ran a profitable resale business for 2+ years, buying and selling sneakers based on market timing and demand trends.",
+      "Tracked market trends, seasonal demand cycles, and pricing fluctuations to build strategies for buy-low/sell-high execution. Managed all aspects of operations independently."
     ],
     highlights: [
       "Built profitable resale business from scratch with data-driven pricing strategies",
